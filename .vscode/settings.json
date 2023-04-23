@@ -1,0 +1,4 @@
+{
+    "CodeGPT.maxTokens": 1000,
+    "CodeGPT.temperature": 0.5
+}
