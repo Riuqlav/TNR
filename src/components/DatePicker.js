@@ -8,7 +8,7 @@ function DatePicker() {
   const startInputRef = useRef(null);
   const endInputRef = useRef(null);
 
-  // Define a function to handle changes to the check-in and check-out inputs
+  // Define a function to handle changes to the check-in and check-out inputs.
   function handleDateChange(event, setter) {
     const { value } = event.target;
     // Use optional chaining to set the value if it matches the expected pattern or clear it if it's an empty string
