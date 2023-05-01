@@ -87,6 +87,7 @@ function DatePicker() {
           {new Date(end).toLocaleDateString("en-GB")}
         </h1>
       )}
+
     </form>
   );
 }
