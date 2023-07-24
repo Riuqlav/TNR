@@ -1,9 +1,12 @@
 import React, { useState, useRef } from "react";
 
 function DatePicker() {
+  // Define state variables for start date, end date, and number of days
   const [start, setStart] = useState("");
   const [end, setEnd] = useState("");
-  const [numDays, setNumDays] = useState(null);
+  const [numDays, setNumDays] = useState(0);
+
+  // Define refs for the two inputs
 
   const startInputRef = useRef(null);
   const endInputRef = useRef(null);
@@ -79,7 +82,7 @@ function DatePicker() {
       >
         Calculate
       </button>
-      {/* Result Heading */}
+      {/* Result Hearder */}
       {numDays && (
         <h1 className="w-full text-center m-4 text-gray-700 font-bold">
           You selected {numDays} {numDays === 1 ? "Day" : "Days"} from{" "}
