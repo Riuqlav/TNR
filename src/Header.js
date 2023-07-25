@@ -14,7 +14,7 @@ const Header = () => (
         <Link to="/About" className="mr-5 transition duration-1000 ease-in-out hover:text-yellow-500 text-white">About</Link>
         <Link to="/Projects" className="mr-5 transition duration-1000 ease-in-out hover:text-yellow-500 text-white">Projects</Link>
         <Link to="/Ranks" className="mr-5 transition duration-1000 ease-in-out hover:text-yellow-500 text-white">Ranks</Link>
-        {/* <Link to="/Vocabulary" className="mr-5 transition duration-1000 ease-in-out hover:text-yellow-500 text-white">Vocabulary</Link> */}
+        <Link to="/Vocabulary" className="mr-5 transition duration-1000 ease-in-out hover:text-yellow-500 text-white">Vocabulary</Link>
       </nav>
     </div>
   </header>
