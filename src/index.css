@@ -2,13 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.columns {
-    column-count: 3;
-    column-gap: 1em;
-}
-
-.column {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    -webkit-column-break-inside: avoid;
-}
