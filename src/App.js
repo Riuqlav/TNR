@@ -1,11 +1,15 @@
 import React from "react";
-import DatePicker from "./components/DatePicker";
+import Footer from "./Footer";
+import  Main  from "./Main";
+import Header  from "./Header";
 
 function App() {
 
   return (
     <div className="App">
-      <DatePicker />
+      <Header/>
+      <Main/>
+      <Footer/>
   </div>
   );
 }
