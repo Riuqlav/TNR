@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ScrollReveal from "scrollreveal";
 
 const Home = () => {
- 
+
   const ContentTable = useMemo(() => [
     {
       id: 1,
@@ -69,7 +69,7 @@ const Home = () => {
       link: "/artwork9"
     },
   ], []);
-  
+
 
   const containerRef = useRef(null);
 
@@ -130,7 +130,9 @@ const Home = () => {
         {ContentTable.map((post, i) => (
           <div key={post.id} className="m-10 max-w-full flex flex-col md:flex-row items-center transform transition duration-500 ease-in-out hover:scale-103">
             <div className={i % 2 === 0 ? `w-full md:w-2/5 image-${post.id}` : `w-full md:w-2/5 md:order-last image-${post.id}`}>
-              <img alt="Placeholder" className="w-full object-cover" src={post.img} />
+            <Link to={post.link}>
+            <img alt="Placeholder" className="w-full object-cover" src={post.img} />
+            </Link>
             </div>
             <div className={i % 2 === 0 ? `w-full md:w-3/5 content-${post.id}` : `w-full md:w-3/5 md:order-first content-${post.id}`}>
               <div className="px-6 py-4">

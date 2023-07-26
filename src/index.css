@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    position: relative;
+    min-width: 100vh;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("./BG.png");
+    background-repeat: repeat;
+    opacity: 0.1; /* Adjust to taste: 0 is fully transparent, 1 is fully opaque */
+    z-index: -1;
+}
