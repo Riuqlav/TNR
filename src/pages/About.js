@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import ScrollReveal from "scrollreveal";
+import NFT16 from "../assets/imgs/NFT16.jpg"
+
 
 const About = () => {
   const containerRef = useRef(null);
@@ -8,7 +10,7 @@ const About = () => {
     ScrollReveal().reveal(".about-image", {
       delay: 300,
       distance: "50px",
-      duration: 500,
+      duration: 300,
       easing: "ease-in-out",
       origin: "left",
       reset: true,
@@ -17,7 +19,7 @@ const About = () => {
     ScrollReveal().reveal(".about-content", {
       delay: 500,
       distance: "50px",
-      duration: 400,
+      duration: 300,
       easing: "ease-in-out",
       origin: "right",
       reset: true,
@@ -32,8 +34,8 @@ const About = () => {
             <img
               alt="About Placeholder"
                 className="w-full object-cover h-96"
-              src="https://images.unsplash.com/photo-1529154166925-574a0236a4f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
-            />
+                src={NFT16}
+                />
           </div>
           <div className="w-full md:w-3/5 about-content">
             <div className="px-6 py-4">
