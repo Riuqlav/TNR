@@ -4,6 +4,8 @@ import Footer from "./Footer";
 import RoutesComponent from "./RoutesComponent";
 import Header from "./Header";
 
+import "./index.css";
+
 function App() {
   return (
     <div className="App">
