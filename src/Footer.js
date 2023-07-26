@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from "./TNR/The New Royals 2b1e1441ba8a448e94a1b4bd200165f8/X.jpg";
+import logo from "./assets/TNR/The New Royals 2b1e1441ba8a448e94a1b4bd200165f8/X.jpg";
 
 const Footer = () => (
   <footer className='bg-black'>

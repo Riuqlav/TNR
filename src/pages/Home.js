@@ -9,7 +9,7 @@ const Home = () => {
       id: 1,
       title: "About",
       content: "We are a team of passionate developers who love building amazing web applications. Our goal is to create software that is not only functional but also beautiful and intuitive. We believe that technology should be accessible to everyone, and we strive to make our products easy to use for people of all skill levels.",
-      img: "https://images.unsplash.com/photo-1529154166925-574a0236a4f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+      img: "https://github.com/Riuqlav/calendar-dual/blob/master/src/assets/imgs/NFT/NFTART16.jpg",
       link: "/about"
     },
     {
