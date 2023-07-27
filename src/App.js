@@ -8,10 +8,12 @@ import "./index.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className="flex flex-col min-h-screen App">
       <Router>
-        <Header />
-        <RoutesComponent />
+        <div className="flex-grow">
+          <Header />
+          <RoutesComponent />
+        </div>
         <Footer />
       </Router>
     </div>
