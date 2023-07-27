@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/TNR/static/css/main.681fc80b.css",
-    "main.js": "/TNR/static/js/main.91a1edfb.js",
+    "main.js": "/TNR/static/js/main.09995fc5.js",
     "static/media/X.jpg": "/TNR/static/media/X.028e8b83a641ba73b7b6.jpg",
     "index.html": "/TNR/index.html",
     "main.681fc80b.css.map": "/TNR/static/css/main.681fc80b.css.map",
-    "main.91a1edfb.js.map": "/TNR/static/js/main.91a1edfb.js.map"
+    "main.09995fc5.js.map": "/TNR/static/js/main.09995fc5.js.map"
   },
   "entrypoints": [
     "static/css/main.681fc80b.css",
-    "static/js/main.91a1edfb.js"
+    "static/js/main.09995fc5.js"
   ]
 }
