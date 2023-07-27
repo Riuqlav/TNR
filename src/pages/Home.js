@@ -1,108 +1,79 @@
 import React, { useEffect, useMemo, useRef } from "react";
-import { Link } from "react-router-dom";
-import ScrollReveal from "scrollreveal";
-import NFT1 from "../assets/imgs/NFT1.jpg"
-import NFT2 from "../assets/imgs/NFT2.jpg";
-import NFT3 from "../assets/imgs/NFT3.jpg";
-import NFT4 from "../assets/imgs/NFT4.jpg";
-import NFT5 from "../assets/imgs/NFT5.jpg";
-import NFT6 from "../assets/imgs/NFT6.jpg";
-import NFT7 from "../assets/imgs/NFT7.jpg";
-import NFT8 from "../assets/imgs/NFT8.jpg";
-import NFT9 from "../assets/imgs/NFT9.jpg";
+// import ScrollReveal from "scrollreveal";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Home = () => {
-
   const ContentTable = useMemo(() => [
     {
       id: 1,
-      title: "About",
-      content: "We are a team of passionate developers who love building amazing web applications. Our goal is to create software that is not only functional but also beautiful and intuitive. We believe that technology should be accessible to everyone, and we strive to make our products easy to use for people of all skill levels.",
-      img: NFT1,
-      link: "/about"
+      title: "Artwork 1",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius diam vitae purus pulvinar, sed ultricies enim sagittis. Curabitur id semper ex. Vivamus a lacinia tellus. Quisque nec rutrum dui. Fusce accumsan eleifend purus, sit amet porttitor risus tristique sed.",
+      img: "https://raw.githubusercontent.com/Riuqlav/calendar-dual/master/src/assets/imgs/NFt1.jpg"
     },
     {
       id: 2,
-      title: "Projects",
-      content: "We have worked on a variety of projects, ranging from small websites to large-scale web applications. Our team has experience with a wide range of technologies, including React, Node.js, and MongoDB. We are always looking for new and exciting projects to work on, so if you have an idea for a web application, we would love to hear from you!",
-      img: NFT2,
-      link: "/projects"
+      title: "Artwork 2",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.",
+      img: "https://raw.githubusercontent.com/Riuqlav/calendar-dual/master/src/assets/imgs/NFt2.jpg"
     },
     {
       id: 3,
-      title: "Ranks",
-      content: "We are proud to have some of our projects ranked among the top web applications in the world. Our team has won several awards for our work, and we are constantly striving to improve our skills and create even better software. We believe that our success is due to our commitment to quality and our passion for what we do.",
-      img: NFT3,
-      link: "/ranks"
+      title: "Artwork 3",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.",
+      img: "https://raw.githubusercontent.com/Riuqlav/calendar-dual/master/src/assets/imgs/NFt3.jpg"
     },
     {
       id: 4,
-      title: "David and God",
-      content: "This striking piece portrays the seminal moment of divine connection between David and God. Its vivid colors and intricate detail illustrate the artist's skillful representation of this revered biblical event.",
-      img: NFT4,
-      link: "/artwork4"
+      title: "Artwork 4",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.",
+      img: "https://raw.githubusercontent.com/Riuqlav/calendar-dual/master/src/assets/imgs/NFt4.jpg"
     },
     {
       id: 5,
-      title: "Battle Scene",
-      content: "A striking representation of a Renaissance battle, this painting captures the chaos and bravery of the time. The artist's skill is evident in the intricate detailing of the soldiers and the dynamic portrayal of action.",
-      img: NFT5,
-      link: "/artwork5"
+      title: "Artwork 5",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.Integer posuere erat a ante.",
+      img: "https://raw.githubusercontent.com/Riuqlav/calendar-dual/master/src/assets/imgs/NFt5.jpg"
     },
     {
       id: 6,
-      title: "Heavenly Ascension",
-      content: "This Renaissance painting beautifully depicts the heavenly ascension with serene and ethereal imagery. The intricate detailing of the celestial beings showcases the artist's skill and devotion.",
-      img: NFT6,
-      link: "/artwork6"
+      title: "Artwork 6",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.",
+      img: "https://raw.githubusercontent.com/Riuqlav/calendar-dual/master/src/assets/imgs/NFt6.jpg"
     },
     {
       id: 7,
-      title: "Still Life with Skull",
-      content: "This still life painting features a hauntingly beautiful skull. The artist has brought a raw and morbid beauty to the forefront, emphasizing the transient nature of life.",
-      img: NFT7,
-      link: "/artwork7"
+      title: "Artwork 7",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.",
+      img: "https://raw.githubusercontent.com/Riuqlav/calendar-dual/master/src/assets/imgs/NFt7.jpg"
     },
     {
       id: 8,
-      title: "Church Interior",
-      content: "This baroque painting beautifully depicts the interior of a grand church. The artist's use of light and shadow brings depth to the image, and the intricate details highlight the architectural beauty of the era.",
-      img: NFT8,
-      link: "/artwork8"
+      title: "Artwork 8",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.",
+      img: "https://raw.githubusercontent.com/Riuqlav/calendar-dual/master/src/assets/imgs/NFt8.jpg"
     },
     {
       id: 9,
-      title: "Heavenly Vision",
-      content: "Another beautiful representation of the heavens from the Renaissance era, this painting embodies the spiritual aspiration and religious devotion of the time, with celestial beings painted with fine detailing.",
-      img: NFT9,
-      link: "/artwork9"
-    },
-  ], []);
-
+      title: "Artwork 9",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.",
+      img: "https://raw.githubusercontent.com/Riuqlav/calendar-dual/master/src/assets/imgs/NFt9.jpg"
+    }
+], []);
 
   const containerRef = useRef(null);
 
-  useEffect(() => {
+ useEffect(() => {
+    AOS.init({
+      once: true, // here
+    });
+
     ContentTable.forEach((post, i) => {
-      const direction = i % 2 === 0 ? "left" : "right";
+      const direction = i % 2 === 0 ? "fade-left" : "fade-right";
 
-      ScrollReveal().reveal(`.image-${post.id}`, {
-        delay: 300,
-        distance: "50px",
-        duration: 300,
-        easing: "ease-in-out",
-        origin: direction,
-        reset: true,
-      });
-
-      ScrollReveal().reveal(`.content-${post.id}`, {
-        delay: 500,
-        distance: "50px",
-        duration: 400,
-        easing: "ease-in-out",
-        origin: direction === "left" ? "right" : "left",
-        reset: true,
-      });
+      document.querySelector(`.image-${post.id}`).setAttribute("data-aos", direction);
+      document.querySelector(`.content-${post.id}`).setAttribute("data-aos", direction === "fade-left" ? "fade-right" : "fade-left");
     });
 
     const adjustLayout = () => {
@@ -134,28 +105,46 @@ const Home = () => {
   }, [ContentTable]);
 
   return (
-    <div className="container mx-auto px-4 md:px-12">
-      <div className="flex flex-wrap justify-center" ref={containerRef}>
-        {ContentTable.map((post, i) => (
-          <div key={post.id} className="m-10 max-w-full flex flex-col md:flex-row items-center transform transition duration-500 ease-in-out hover:scale-103">
-            <div className={i % 2 === 0 ? `w-full md:w-2/5 image-${post.id}` : `w-full md:w-2/5 md:order-last image-${post.id}`}>
-            <Link to={post.link}>
-            <img alt="Placeholder" className="w-full object-cover" src={post.img} />
-            </Link>
-            </div>
-            <div className={i % 2 === 0 ? `w-full md:w-3/5 content-${post.id}` : `w-full md:w-3/5 md:order-first content-${post.id}`}>
-              <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">
-                  {i < 3 ? <Link to={post.link}>{post.title}</Link> : post.title}
-                </div>
-                <p className="text-grey-darker text-base">{post.content}</p>
-              </div>
-            </div>
-          </div>
-        ))}
+    <div className="container mx-auto px-4 sm:px-2 md:px-12">
+      <img
+        alt="Placeholder"
+        className="w-full object-cover py-8 sm:py-8 md:py-14"
+        src="https://raw.githubusercontent.com/Riuqlav/calendar-dual/master/src/assets/imgs/WideLogo.png"
+      />
+      <div className="flex flex-wrap justify-center py-4 sm:py-8 md:py-14 overflow-hidden" ref={containerRef}>
+      {ContentTable.map((post, i) => (
+  <div
+    key={post.id}
+    className="m-1 sm:m-3 py-10 md:m-5 w-full flex flex-col md:flex-row items-center transform transition duration-500 ease-in-out hover:scale-103 overflow-hidden box-content"
+    data-aos="ease-in"
+    data-aos-duration="500"
+    data-aos-delay="0"
+  >
+    <div
+      className={`w-full md:w-2/5 image-${post.id} overflow-hidden box-content ${i % 2 === 0 ? "md:order-first" : "md:order-last"}`}
+      data-aos="ease-in"
+      data-aos-duration="500"
+      data-aos-delay="0"
+    >
+      <img alt="Placeholder" className="w-full object-cover flex-shrink-0" src={post.img} />
+    </div>
+    <div
+      className={`w-full md:w-3/5 content-${post.id} overflow-hidden box-content ${i % 2 === 0 ? "md:order-last" : "md:order-first"}`}
+      data-aos="fade-in"
+      data-aos-duration="1000"
+      data-aos-delay="0"
+    >
+      <div className="px-2 sm:px-4 md:px-6 py-2 sm:py-3 md:py-4">
+        <div className="font-bold text-lg sm:text-xl md:text-2xl mb-2">{post.title}</div>
+        <p className="text-grey-darker text-sm sm:text-base md:text-lg">{post.content}</p>
+      </div>
+    </div>
+  </div>
+))}
       </div>
     </div>
   );
+
 };
 
 export default Home;
