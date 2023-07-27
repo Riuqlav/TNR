@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <header id="header" className='bg-gradient-to-r from-black to-yellow-500 relative'>
       <div className="container mx-auto flex justify-between items-center p-1 md:p-1">
-        <Link to="/" className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+        <Link to="/TNR" className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
           <img src={logo} alt="The New Royals" className="w-12 h-12 text-white p-2 rounded-full" />
           <span className="ml-1 text-xl">The New Royals</span>
         </Link>
