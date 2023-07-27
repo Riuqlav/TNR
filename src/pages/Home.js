@@ -1,5 +1,4 @@
 import React, { useEffect, useMemo, useRef } from "react";
-// import ScrollReveal from "scrollreveal";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
