@@ -1,31 +1,29 @@
-# 📅 DatePicker
+# 👑 The New Royals NFT Club 🎨
 
-This is a React Component that allows users to select a Start and End dates and calculates the number of days selected. It's perfect for any renting or billing or travel-related applications.
+The New Royals NFT Club is an exclusive community, understanding and harnessing the power of symbolism, purpose, and a sense of belonging. This international club aims to transform the realm of NFT Art and redefine the perception of royalty in the digital space.
 
-### 🚀 Getting Started
+<p align="center">
+  <img src="./src/assets/imgs/X.jpg" alt="Logo" width="1000"/>
+</p>
 
-To get started with the DatePicker application, follow these steps:
+## 🚀 Journey
 
-1.Clone this repository to your local machine.
-2.Navigate to the project directory in your terminal.
-3.Run npm or yarn install to install the required dependencies.
-4.Run npm or yarn start to start the development server.
-5.Open http://localhost:3000 to view the application in your browser.
+Embark on an extraordinary journey with us. As a New Royal, you are not just an observer, but a participant in this grand narrative. Become a strong personality capable of conquering new realms, ideas, and ideals.
 
-### 🛠️ Built With
+## 🎖️ Your Heraldry 
 
-React - JavaScript library for building user interfaces.
-HTML - Markup language for creating web pages.
-Tailwind - Style sheet language used for describing the presentation of a document.
+Claim your place among legends through personal heraldry. Our NFTs are not just artwork, they are a symbol of your unique persona and the impact you have on this expansive digital realm.
 
-### 🎨 Styling
+## 🖼️ NFT Art Collection
 
-The DatePicker application is styled using the Tailwind CSS framework, which provides a set of pre-built styles and utilities that can be used to rapidly build custom UI components.
+We invite you to join us in a new era of fine art. Our NFTs are curated with the utmost care and precision, designed to capture the essence of royalty in the most profound and captivating manner.
 
-### 🤝 Contributing
+## 📖 The Original Story
 
-Contributions are always welcome! If you have any suggestions or feature requests, please open an issue or submit a pull request.
+Every Royal has a story, and we encourage you to enter ours. The Original Story is an interactive narrative that deepens the bond between the Royals and provides a rich backdrop to the NFT artwork.
 
-### 👨‍💻 Author
+## 🌍 The New Era
 
-This application was created by @Riuqlav. You can find me on https://github.com/Riuqlav.
+Forge a new era marked by conquests of the mind, heart, and soul. This is not just about owning NFTs. This is about creating a legacy in a rapidly evolving digital world. The world awaits the rise of the New Royals!
+
+Welcome to The New Royals NFT Club - the future of digital royalty! 🏰🎉
