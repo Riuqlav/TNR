@@ -36,13 +36,14 @@ const Header = () => {
           {isOpen ? '' : '☰'}
         </button>
         <nav className={`fixed z-20 top-0 right-0 w-40 md:w-1/3 h-full bg-black bg-opacity-80 transform pt-0.4 ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-200 ease-in-out md:translate-x-0 md:relative md:bg-transparent md:flex md:items-center md:w-auto md:h-auto md:justify-end md:pt-0`}>
-          {isOpen && <button className='text-4xl md:hidden absolute top-0 right-0 m-2 transition-colors duration-200 ' onClick={toggleMenu}>✖</button>}
-          <Link to="/TNR/" className="block p-4 transition-colors duration-200 text-white" onClick={hideMenu}>Home</Link>
-          <Link to="/TNR/Articles" className="block p-4 transition-colors duration-200 text-white" onClick={hideMenu}>Articles</Link>
-          <Link to="/TNR/Projects" className="block p-4 transition-colors duration-200 text-white" onClick={hideMenu}>Projects</Link>
-          <Link to="/TNR//Ranks" className="block p-4 transition-colors duration-200 text-white" onClick={hideMenu}>Ranks</Link>
-          <Link to="/TNR/Vocabulary" className="block p-4 transition-colors duration-200 text-white" onClick={hideMenu}>Vocabulary</Link>
+           {isOpen && <button className='text-4xl md:hidden absolute top-0 right-0 m-2 transition-colors duration-200 ' onClick={toggleMenu}>✖</button>}
+           <Link to="/TNR/" className="block p-4 transition-colors duration-200 text-white" onClick={hideMenu}>Home</Link>
+           <Link to="/TNR/Articles" className="block p-4 transition-colors duration-200 text-white" onClick={hideMenu}>Articles</Link>
+           <Link to="/TNR/Ranks" className="block p-4 transition-colors duration-200 text-white" onClick={hideMenu}>Ranks</Link>
+           <Link to="/TNR/Vocabulary" className="block p-4 transition-colors duration-200 text-white" onClick={hideMenu}>Vocabulary</Link>
+           <Link to="/TNR/Community" className="block p-4 transition-colors duration-200 text-white" onClick={hideMenu}>Community</Link>
         </nav>
+
       </div>
       {isOpen && <div className="fixed z-10 inset-0 bg-black opacity-50" onClick={hideMenu}></div>}
     </header>

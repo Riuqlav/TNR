@@ -3,7 +3,7 @@ import {Route, Routes } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Articles from './pages/Articles';
-import Projects from './pages/Projects';
+import Community from './pages/Community';
 import Ranks from './pages/Ranks';
 import Vocabulary from './pages/Vocabulary';
 
@@ -12,7 +12,7 @@ const RoutesComponent = () => {
     <Routes>
       <Route path="/TNR" element={<Home />} />
       <Route path="/TNR/articles" element={<Articles />} />
-      <Route path="/TNR/projects" element={<Projects />} />
+      <Route path="/TNR/community" element={<Community />} />
       <Route path="/TNR/ranks" element={<Ranks />} />
       <Route path="/TNR/vocabulary" element={<Vocabulary />} />
     </Routes>

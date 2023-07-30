@@ -65,7 +65,7 @@ const Home = () => {
 
  useEffect(() => {
     AOS.init({
-      once: true, // here
+      once: true, 
     });
 
     ContentTable.forEach((post, i) => {
