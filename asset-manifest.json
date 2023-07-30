@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/TNR/static/css/main.681fc80b.css",
-    "main.js": "/TNR/static/js/main.09995fc5.js",
+    "main.css": "/TNR/static/css/main.3c5b9ee0.css",
+    "main.js": "/TNR/static/js/main.066dc96f.js",
+    "static/media/TwitterLogo.png": "/TNR/static/media/TwitterLogo.299a72201ad18daf63dd.png",
     "static/media/X.jpg": "/TNR/static/media/X.028e8b83a641ba73b7b6.jpg",
+    "static/media/DiscordLogo.png": "/TNR/static/media/DiscordLogo.369ed86a973c2c4ff78f.png",
+    "static/media/SpatialLogo.png": "/TNR/static/media/SpatialLogo.9da4f2cefd2c2c9c3c6e.png",
     "index.html": "/TNR/index.html",
-    "main.681fc80b.css.map": "/TNR/static/css/main.681fc80b.css.map",
-    "main.09995fc5.js.map": "/TNR/static/js/main.09995fc5.js.map"
+    "main.3c5b9ee0.css.map": "/TNR/static/css/main.3c5b9ee0.css.map",
+    "main.066dc96f.js.map": "/TNR/static/js/main.066dc96f.js.map"
   },
   "entrypoints": [
-    "static/css/main.681fc80b.css",
-    "static/js/main.09995fc5.js"
+    "static/css/main.3c5b9ee0.css",
+    "static/js/main.066dc96f.js"
   ]
 }
