@@ -20,3 +20,4 @@ body::before {
     opacity: 0.1; /* Adjust to taste: 0 is fully transparent, 1 is fully opaque */
     z-index: -1;
 }
+
