@@ -5,7 +5,7 @@ import SpatialLogo from '../assets/imgs/SpatialLogo.png';
 import TwitterLogo from '../assets/imgs/TwitterLogo.png';
 
 function Community() {
-  const ContentTable = useMemo(() => [
+  const ContentTable = [
     {
       logo: DiscordLogo,
       link: 'https://discord.gg/WKd3d2BT',
@@ -31,7 +31,7 @@ function Community() {
       alt: 'Follow us on Twitter',
       description: 'Stay updated with our latest news and updates on Twitter.'
     }
-  ], []);
+  ];
 
   return (
     <div className="container mx-auto px-4 md:px-12">

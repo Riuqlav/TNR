@@ -61,7 +61,7 @@ const Articles = () => {
     <div className="container mx-auto px-4 md:px-12">
       <div className="flex flex-wrap justify-center">
         {ContentTable.map((post, i) => (
-          <div className="m-10 max-w-full flex flex-col md:flex-row items-center transform transition duration-500 ease-in-out hover:scale-103" key={i}>
+          <div className="m-8 max-w-full flex flex-col md:flex-row items-center transform transition duration-500 ease-in-out hover:scale-103" key={i}>
             <div className={`w-full md:w-4/6 about-image-${post.id} my-8 md:my-20`} data-aos-duration="1000" data-aos-delay="0">
               {post.img ? <img
                 alt="About Placeholder"
