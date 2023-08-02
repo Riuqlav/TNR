@@ -1,8 +1,9 @@
-import React, { useEffect, useMemo, useRef } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
-import NFT1 from "../assets/imgs/NFT1.jpg"
+import "aos/dist/aos.css";
+
+import NFT1 from "../assets/imgs/NFT1.jpg";
 import NFT2 from "../assets/imgs/NFT2.jpg";
 import NFT3 from "../assets/imgs/NFT3.jpg";
 import NFT4 from "../assets/imgs/NFT4.jpg";
@@ -14,9 +15,9 @@ import NFT9 from "../assets/imgs/NFT9.jpg";
 import WideLogo from "../assets/imgs/WideLogo.png";
 
 const Home = () => {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
-  const ContentTable = useMemo(() => [
-    {
+  const ContentTable = useMemo(() => [{
       id: 1,
       title: "Articles",
       content: "We are a team of passionate developers who love building amazing web applications. Our goal is to create software that is not only functional but also beautiful and intuitive. We believe that technology should be accessible to everyone, and we strive to make our products easy to use for people of all skill levels.",
@@ -79,74 +80,61 @@ const Home = () => {
       img: NFT9,
       link: "/artwork9"
     },
-  ], []);
+    ], []);
 
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    AOS.init({
-      duration : 1000
-    });
-
-    const adjustLayout = () => {
-      const posts = Array.from(containerRef.current.children);
-      posts.forEach(post => {
-        const imgContainer = post.children[0];
-        const textContainer = post.children[1];
-        if (textContainer.offsetHeight > imgContainer.offsetHeight) {
-          post.classList.remove('md:flex-row');
-          post.classList.add('md:flex-col');
-          imgContainer.style.order = '1';
-          textContainer.style.order = '2';
-        } else {
-          post.classList.remove('md:flex-col');
-          post.classList.add('md:flex-row');
-          imgContainer.style.order = '';
-          textContainer.style.order = '';
-        }
+    useEffect(() => {
+      AOS.init({
+        duration: 1000
       });
-    };
-
-    const resizeObserver = new ResizeObserver(adjustLayout);
-    ContentTable.forEach((post) => {
-      const textContainer = document.querySelector(`.content-${post.id}`);
-      resizeObserver.observe(textContainer);
-    });
-
-    return () => resizeObserver.disconnect();
-  }, [ContentTable]);
-
-  return (
-    <div className="container mx-auto px-4 md:px-12">
-      <img alt="Placeholder" className="w-full object-cover py-10" src={WideLogo} />
-      <div className="flex flex-wrap justify-center" ref={containerRef}>
-      {ContentTable.map((post, i) => {
-          const direction = i % 2 === 0 ? "fade-left" : "fade-right";
-          return (
-            <div key={post.id} className="m-10 max-w-full flex flex-col md:flex-row items-center transform transition duration-500 ease-in-out hover:scale-103" data-aos={direction}>
-              <div className={i % 2 === 0 ? `w-full md:w-2/5 image-${post.id}` : `w-full md:w-2/5 md:order-last image-${post.id}`}>
-                <Link to={post.link}>
-                  <img alt="Placeholder" className="w-full object-cover" src={post.img} />
-                </Link>
+    }, []);
+  
+    useEffect(() => {
+      let images = ContentTable.map((item) => item.img);
+      Promise.all(
+        images.map((src) =>
+          new Promise((resolve) => {
+            const img = new Image();
+            img.src = src;
+            img.onload = resolve;
+          })
+        )
+      ).then(() => {
+        setImagesLoaded(true);
+      });
+    }, []);
+  
+    return (
+      <div className={`flex flex-col items-center justify-center w-full py-4 px-4 md:px-0 ${imagesLoaded ? 'opacity-100 transition-opacity duration-700' : 'opacity-0'}`}>
+        <div className="flex flex-col md:flex-row items-center justify-center w-full py-12 px-4 md:px-4">
+        <img src={WideLogo} alt="Wide Logo" className="w-full " />
+        </div>
+        {ContentTable.map((item, index) => (
+          <div
+            className={`flex flex-col md:flex-row w-full my-5 items-center ${
+              index % 2 === 0 ? "md:flex-row-reverse" : ""
+            }`}
+            key={item.id}
+            data-aos="fade-right"
+          >
+            <Link to={item.link} className="md:w-3/5 w-full md:px-10">
+              <div className="flex flex-col items-center md:items-start py-4">
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full object-cover "
+                />
               </div>
-              <div className={i % 2 === 0 ? `w-full md:w-3/5 content-${post.id}` : `w-full md:w-3/5 md:order-first content-${post.id}`}>
-                <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2">
-                    {i < 3 ? <Link to={post.link}>{post.title}</Link> : post.title}
-                  </div>
-                  <p className="text-grey-darker text-base">{post.content}</p>
-                </div>
+            </Link>
+            <div className="md:w-3/5 w-full text-center md:text-left mt-5 md:mt-0 md:px-10 py-4">
+              <div className="font-bold text-xl mb-2">
+                <Link to={item.link}>{item.title}</Link>
               </div>
+              <p>{item.content}</p>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
-    </div>
-  );
-};
-
-export default Home;
-
-
-
-
+    );
+  
+  };
+  export default Home;
