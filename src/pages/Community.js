@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import DiscordLogo from '../assets/imgs/DiscordLogo.png';
 import OpenseaLogo from '../assets/imgs/OpenseaLogo.png';
 import SpatialLogo from '../assets/imgs/SpatialLogo.png';
@@ -41,7 +42,8 @@ function Community() {
       </p>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6 justify-items-center ">
         {ContentTable.map(({ logo, link, alt, description, isSmaller }, index) => (
-          <div key={index} className="relative group mt-6 p-4">
+          <Link to={link} target="_blank" rel="noopener noreferrer" key={index}>
+            <div key={index} className="relative group mt-6 p-4">
             <a href={link} target="_blank" rel="noreferrer">
               <img
                 src={logo}
@@ -49,10 +51,11 @@ function Community() {
                 className={`w-36 h-36 md:w-44 md:h-44 object-contain transform group-hover:scale-110 transition-transform duration-200 ${isSmaller ? 'md:w-28 md:mx-8' : ''}`}
               />
             </a>
-            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-800 bg-black bg-opacity-50 px-2 text-white text-sm">
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-800 bg-black bg-opacity-30 px-2 text-white text-sm">
               <p>{description}</p>
             </div>
           </div>
+          </Link>
         ))}
       </div>
     </div>
