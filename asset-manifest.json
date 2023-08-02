@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TNR/static/css/main.663a237f.css",
-    "main.js": "/TNR/static/js/main.dd46b3d3.js",
+    "main.css": "/TNR/static/css/main.406ecfe3.css",
+    "main.js": "/TNR/static/js/main.a79341d1.js",
     "static/media/NFT5.jpg": "/TNR/static/media/NFT5.d18eee9ab2d52f8fba30.jpg",
     "static/media/NFT1.jpg": "/TNR/static/media/NFT1.5445bd07472edf35baae.jpg",
     "static/media/NFT7.jpg": "/TNR/static/media/NFT7.7fe797faa917965d60e4.jpg",
@@ -18,11 +18,11 @@
     "static/media/SpatialLogo.png": "/TNR/static/media/SpatialLogo.9da4f2cefd2c2c9c3c6e.png",
     "static/media/WideLogo.png": "/TNR/static/media/WideLogo.63da87fa84ff0ec23ff2.png",
     "index.html": "/TNR/index.html",
-    "main.663a237f.css.map": "/TNR/static/css/main.663a237f.css.map",
-    "main.dd46b3d3.js.map": "/TNR/static/js/main.dd46b3d3.js.map"
+    "main.406ecfe3.css.map": "/TNR/static/css/main.406ecfe3.css.map",
+    "main.a79341d1.js.map": "/TNR/static/js/main.a79341d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.663a237f.css",
-    "static/js/main.dd46b3d3.js"
+    "static/css/main.406ecfe3.css",
+    "static/js/main.a79341d1.js"
   ]
 }
