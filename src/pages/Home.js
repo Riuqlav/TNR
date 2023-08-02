@@ -15,8 +15,6 @@ import NFT9 from "../assets/imgs/NFT9.jpg";
 import WideLogo from "../assets/imgs/WideLogo.png";
 
 const Home = () => {
-  const [imagesLoaded, setImagesLoaded] = useState(false);
-
   const ContentTable = useMemo(() => [{
       id: 1,
       title: "Articles",
@@ -81,6 +79,8 @@ const Home = () => {
       link: "/artwork9"
     },
     ], []);
+
+  const [imagesLoaded, setImagesLoaded] = useState(false);
 
     useEffect(() => {
       AOS.init({
