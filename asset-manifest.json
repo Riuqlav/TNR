@@ -1,12 +1,18 @@
 {
   "files": {
-    "main.css": "/TNR/static/css/main.406ecfe3.css",
-    "main.js": "/TNR/static/js/main.a79341d1.js",
+    "main.css": "/TNR/static/css/main.a92aa821.css",
+    "main.js": "/TNR/static/js/main.b9558543.js",
+    "static/media/tnr coa 5.jpg": "/TNR/static/media/tnr coa 5.551926f6507d0f13e18f.jpg",
+    "static/media/tnr coa 6.jpg": "/TNR/static/media/tnr coa 6.788058c5f7bf2fa1d67e.jpg",
+    "static/media/tnr coa 3.jpg": "/TNR/static/media/tnr coa 3.6f4d0ab00ff549f782d1.jpg",
     "static/media/NFT5.jpg": "/TNR/static/media/NFT5.d18eee9ab2d52f8fba30.jpg",
     "static/media/NFT1.jpg": "/TNR/static/media/NFT1.5445bd07472edf35baae.jpg",
     "static/media/NFT7.jpg": "/TNR/static/media/NFT7.7fe797faa917965d60e4.jpg",
+    "static/media/tnr coa 4.jpg": "/TNR/static/media/tnr coa 4.7e99832bd8e4ac1faffb.jpg",
+    "static/media/tnr coa 1.jpg": "/TNR/static/media/tnr coa 1.40df0098281f71f2c424.jpg",
     "static/media/NFT6.jpg": "/TNR/static/media/NFT6.9eda4d48814ea950f5d4.jpg",
     "static/media/NFT4.jpg": "/TNR/static/media/NFT4.5a9d8cea05101cfee695.jpg",
+    "static/media/tnr coa 2.jpg": "/TNR/static/media/tnr coa 2.3851ad2dccc3216a5468.jpg",
     "static/media/NFT8.jpg": "/TNR/static/media/NFT8.ec515251e3cfbdb4eb84.jpg",
     "static/media/NFT16.jpg": "/TNR/static/media/NFT16.6877581d80dff5be49e6.jpg",
     "static/media/NFT2.jpg": "/TNR/static/media/NFT2.1621f74761adc238ec9e.jpg",
@@ -18,11 +24,11 @@
     "static/media/SpatialLogo.png": "/TNR/static/media/SpatialLogo.9da4f2cefd2c2c9c3c6e.png",
     "static/media/WideLogo.png": "/TNR/static/media/WideLogo.63da87fa84ff0ec23ff2.png",
     "index.html": "/TNR/index.html",
-    "main.406ecfe3.css.map": "/TNR/static/css/main.406ecfe3.css.map",
-    "main.a79341d1.js.map": "/TNR/static/js/main.a79341d1.js.map"
+    "main.a92aa821.css.map": "/TNR/static/css/main.a92aa821.css.map",
+    "main.b9558543.js.map": "/TNR/static/js/main.b9558543.js.map"
   },
   "entrypoints": [
-    "static/css/main.406ecfe3.css",
-    "static/js/main.a79341d1.js"
+    "static/css/main.a92aa821.css",
+    "static/js/main.b9558543.js"
   ]
 }
