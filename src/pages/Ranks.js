@@ -41,27 +41,12 @@ const Ranks = () => {
     },
     {
       id: 6,
-      title: "TNR Merch (Noble Rank Boost) ;)",
+      title: "TNR Merch (Noble Rank Boost)",
       description: "Show your ROYAL PRIDE with our exclusive merchandise. Gain rank-leveling points by wearing the TNR merch and sharing it on social media!",
       img: merchImage,
     },
 ];
   const [imagesLoaded, setImagesLoaded] = useState(false);
-
-  useEffect(() => {
-    let images = ContentTable.map((item) => item.img);
-    Promise.all(
-      images.map((src) =>
-        new Promise((resolve) => {
-          const img = new Image();
-          img.src = src;
-          img.onload = resolve;
-        })
-      )
-    ).then(() => {
-      setImagesLoaded(true);
-    });
-  }, []);
 
   return (
     <div className="my-8 mb-8">
@@ -71,16 +56,16 @@ const Ranks = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-3 p-4">
         {ContentTable.map((item) => (
-          <div key={item.id} className="card rounded-md overflow-hidden shadow-xl transition-transform transform hover:scale-101 hover:shadow-2xl duration-300 ease-in-out relative h-96">
-            <img className={`w-full h-full object-fill ${imagesLoaded ? 'opacity-100 transition-opacity duration-700' : 'opacity-0'}`} src={item.img} alt={item.title} />
-            <div className={`absolute inset-0 bg-black bg-opacity-20 backdrop-blur-sm ${imagesLoaded ? 'opacity-100 transition-opacity duration-700' : 'opacity-0'}`}>
-              <div className="px-6 py-4 h-full flex flex-col justify-between">
+          <div key={item.id} className="card rounded-md overflow-hidden shadow-xl cursor-pointer transition-transform transform hover:scale-101 hover:shadow-2xl ease-in relative h-96">
+            <img onLoad={() => setImagesLoaded(true)} className={`w-full h-full object-fill ${imagesLoaded ? 'opacity-100 transition-opacity duration-700' : 'opacity-0'}`} src={item.img} alt={item.title} />
+              <div className={`absolute inset-0 bg-black bg-opacity-40 backdrop-blur-sm ${imagesLoaded ? 'opacity-100 transition-opacity duration-700' : 'opacity-0'}`}>
+               <div className="px-6 py-4 h-full flex flex-col justify-between">
                 <div className="font-bold text-xl mb-2 text-white line-clamp-3">{item.title}</div>
-                <div>
-                  <p className="text-white text-base leading-relaxed mb-4 line-clamp-3">{item.description}</p>
-                  <a href="#" className="text-gray-500 underline hover:text-gray-600 transition-colors duration-300">Learn More</a>
-                </div>
-              </div>
+                 <div>
+                    <p className="text-white text-base leading-relaxed mb-4 line-clamp-3">{item.description}</p>
+                      <a href="#" className="text-gray-600 underline hover:text-gray-700 transition-colors duration-300 text-right ml-auto">Learn More</a>
+                      </div>
+                  </div>
             </div>
             {!imagesLoaded && <div className="w-full h-full bg-gray-300 animate-pulse"></div>}
           </div>

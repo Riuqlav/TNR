@@ -10,11 +10,11 @@ import Vocabulary from './pages/Vocabulary';
 const RoutesComponent = () => {
   return (
     <Routes>
-      <Route path="/TNR" element={<Home />} />
-      <Route path="/TNR/articles" element={<Articles />} />
-      <Route path="/TNR/community" element={<Community />} />
-      <Route path="/TNR/ranks" element={<Ranks />} />
-      <Route path="/TNR/vocabulary" element={<Vocabulary />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/articles" element={<Articles />} />
+      <Route path="/community" element={<Community />} />
+      <Route path="/ranks" element={<Ranks />} />
+      <Route path="/vocabulary" element={<Vocabulary />} />
     </Routes>
   );
 };
