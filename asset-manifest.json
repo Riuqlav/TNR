@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TNR/static/css/main.a92aa821.css",
-    "main.js": "/TNR/static/js/main.b9558543.js",
+    "main.css": "/TNR/static/css/main.8ee69032.css",
+    "main.js": "/TNR/static/js/main.8087bf71.js",
     "static/media/tnr coa 5.jpg": "/TNR/static/media/tnr coa 5.551926f6507d0f13e18f.jpg",
     "static/media/tnr coa 6.jpg": "/TNR/static/media/tnr coa 6.788058c5f7bf2fa1d67e.jpg",
     "static/media/tnr coa 3.jpg": "/TNR/static/media/tnr coa 3.6f4d0ab00ff549f782d1.jpg",
@@ -24,11 +24,11 @@
     "static/media/SpatialLogo.png": "/TNR/static/media/SpatialLogo.9da4f2cefd2c2c9c3c6e.png",
     "static/media/WideLogo.png": "/TNR/static/media/WideLogo.63da87fa84ff0ec23ff2.png",
     "index.html": "/TNR/index.html",
-    "main.a92aa821.css.map": "/TNR/static/css/main.a92aa821.css.map",
-    "main.b9558543.js.map": "/TNR/static/js/main.b9558543.js.map"
+    "main.8ee69032.css.map": "/TNR/static/css/main.8ee69032.css.map",
+    "main.8087bf71.js.map": "/TNR/static/js/main.8087bf71.js.map"
   },
   "entrypoints": [
-    "static/css/main.a92aa821.css",
-    "static/js/main.b9558543.js"
+    "static/css/main.8ee69032.css",
+    "static/js/main.8087bf71.js"
   ]
 }
