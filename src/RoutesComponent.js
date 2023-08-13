@@ -10,7 +10,7 @@ import Vocabulary from './pages/Vocabulary';
 const RoutesComponent = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/TNR/" element={<Home />} />
       <Route path="/articles" element={<Articles />} />
       <Route path="/community" element={<Community />} />
       <Route path="/ranks" element={<Ranks />} />
