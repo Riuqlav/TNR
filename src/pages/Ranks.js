@@ -53,7 +53,6 @@ const Ranks = () => {
     },
   ];
   const [imagesLoaded, setImagesLoaded] = useState(false);
-
   return (
     <div className="my-8 mb-8">
       <div className="text-center mb-6">
