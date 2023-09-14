@@ -61,7 +61,10 @@ const Articles = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({
+      duration: 1000,
+      once: false,
+    });
   }, []);
 
   useEffect(() => {
