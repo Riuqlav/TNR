@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import Footer from "./Footer";
 import RoutesComponent from "./RoutesComponent";
-import Header from "./Header";
 
 import "./index.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (

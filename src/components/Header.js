@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "./assets/imgs/X.jpg";
+import logo from "../assets/imgs/X.jpg";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
