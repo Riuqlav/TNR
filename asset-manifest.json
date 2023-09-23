@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TNR/static/css/main.0ea3805d.css",
-    "main.js": "/TNR/static/js/main.b0b98ad3.js",
+    "main.css": "/TNR/static/css/main.9f8f9c02.css",
+    "main.js": "/TNR/static/js/main.3468c2c1.js",
     "static/media/NFT1.jpg": "/TNR/static/media/NFT1.bec8214e2afb1cad1483.jpg",
     "static/media/NFT5.jpg": "/TNR/static/media/NFT5.91af149624e89d7af593.jpg",
     "static/media/NFT8.jpg": "/TNR/static/media/NFT8.e962f70243d6e9033dae.jpg",
@@ -17,18 +17,27 @@
     "static/media/TwitterLogo.png": "/TNR/static/media/TwitterLogo.9faa15ab037f7db7bcfb.png",
     "static/media/WideLogo.png": "/TNR/static/media/WideLogo.494e00042763713fb6f5.png",
     "static/media/SpatialLogo.png": "/TNR/static/media/SpatialLogo.33da70121c07257f44b9.png",
+    "static/media/tnr coa 11.jpg": "/TNR/static/media/tnr coa 11.8506ca24534f0d1aee4d.jpg",
     "static/media/tnr coa 5.jpg": "/TNR/static/media/tnr coa 5.e15a69fc410218dd4300.jpg",
+    "static/media/tnr coa 9.jpg": "/TNR/static/media/tnr coa 9.b7164d40fa85852aba06.jpg",
+    "static/media/tnr coa 10.jpg": "/TNR/static/media/tnr coa 10.2a4359fcb4d8f487fb0f.jpg",
+    "static/media/tnr coa 13.jpg": "/TNR/static/media/tnr coa 13.15cb5c9773ba5a18200b.jpg",
+    "static/media/tnr coa 8.jpg": "/TNR/static/media/tnr coa 8.4765c683ee38b12932fa.jpg",
+    "static/media/tnr coa 7.jpg": "/TNR/static/media/tnr coa 7.5bb6ac987f7e7dfd1c4c.jpg",
     "static/media/tnr coa 6.jpg": "/TNR/static/media/tnr coa 6.e909edf0b77569920fae.jpg",
+    "static/media/tnr coa 12.jpg": "/TNR/static/media/tnr coa 12.89b02c084693cc05f4b7.jpg",
     "static/media/tnr coa 3.jpg": "/TNR/static/media/tnr coa 3.a83a1f6af047fd9d7911.jpg",
+    "static/media/tnr coa 14.jpg": "/TNR/static/media/tnr coa 14.8c72d0c00df714f2b0d3.jpg",
+    "static/media/tnr coa 15.jpg": "/TNR/static/media/tnr coa 15.8c72d0c00df714f2b0d3.jpg",
     "static/media/tnr coa 4.jpg": "/TNR/static/media/tnr coa 4.b6972f12210448e19bba.jpg",
     "static/media/tnr coa 1.jpg": "/TNR/static/media/tnr coa 1.d29957347288a53f02bc.jpg",
     "static/media/tnr coa 2.jpg": "/TNR/static/media/tnr coa 2.88fe72884a518d0c38c3.jpg",
     "index.html": "/TNR/index.html",
-    "main.0ea3805d.css.map": "/TNR/static/css/main.0ea3805d.css.map",
-    "main.b0b98ad3.js.map": "/TNR/static/js/main.b0b98ad3.js.map"
+    "main.9f8f9c02.css.map": "/TNR/static/css/main.9f8f9c02.css.map",
+    "main.3468c2c1.js.map": "/TNR/static/js/main.3468c2c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ea3805d.css",
-    "static/js/main.b0b98ad3.js"
+    "static/css/main.9f8f9c02.css",
+    "static/js/main.3468c2c1.js"
   ]
 }
