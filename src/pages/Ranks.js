@@ -2,21 +2,36 @@ import React, { useState } from "react";
 
 import ImageModal from "../components/ImageModal";
 
-import COA1 from "../assets/imgs/tnr coa 1.jpg";
-import COA2 from "../assets/imgs/tnr coa 2.jpg";
-import COA3 from "../assets/imgs/tnr coa 3.jpg";
-import COA4 from "../assets/imgs/tnr coa 4.jpg";
-import COA5 from "../assets/imgs/tnr coa 5.jpg";
-import COA6 from "../assets/imgs/tnr coa 6.jpg";
-import COA7 from "../assets/imgs/tnr coa 7.jpg";
-import COA8 from "../assets/imgs/tnr coa 8.jpg";
-import COA9 from "../assets/imgs/tnr coa 9.jpg";
-import COA10 from "../assets/imgs/tnr coa 10.jpg";
-import COA11 from "../assets/imgs/tnr coa 11.jpg";
-import COA12 from "../assets/imgs/tnr coa 12.jpg";
-import COA13 from "../assets/imgs/tnr coa 13.jpg";
-import COA14 from "../assets/imgs/tnr coa 14.jpg";
-import COA15 from "../assets/imgs/tnr coa 15.jpg";
+import Rank11 from "../assets/imgs/tnr coa 1.jpg";
+import Rank12 from "../assets/imgs/tnr coa 2.jpg";
+import Rank13 from "../assets/imgs/tnr coa 3.jpg";
+import Rank14 from "../assets/imgs/tnr coa 4.jpg";
+import Rank15 from "../assets/imgs/tnr coa 5.jpg";
+import Rank16 from "../assets/imgs/tnr coa 6.jpg";
+import Rank17 from "../assets/imgs/tnr coa 7.jpg";
+import Rank18 from "../assets/imgs/tnr coa 8.jpg";
+import Rank19 from "../assets/imgs/tnr coa 9.jpg";
+import Rank21 from "../assets/imgs/2rank1.png";
+import Rank22 from "../assets/imgs/2rank2.png";
+import Rank23 from "../assets/imgs/2rank3.png";
+import Rank24 from "../assets/imgs/2rank4.png";
+import Rank25 from "../assets/imgs/2rank5.png";
+import Rank26 from "../assets/imgs/2rank6.png";
+import Rank27 from "../assets/imgs/2rank7.png";
+import Rank28 from "../assets/imgs/2rank8.png";
+import Rank29 from "../assets/imgs/2rank9.png";
+import Rank31 from "../assets/imgs/3rank1.jpg";
+import Rank32 from "../assets/imgs/3rank2.jpg";
+import Rank33 from "../assets/imgs/3rank3.jpg";
+import Rank51 from "../assets/imgs/5rank1.jpg";
+import Rank52 from "../assets/imgs/5rank2.jpg";
+import Rank53 from "../assets/imgs/5rank3.jpg";
+import Rank54 from "../assets/imgs/5rank4.jpg";
+import Rank55 from "../assets/imgs/5rank5.jpg";
+import Rank56 from "../assets/imgs/5rank6.jpg";
+import Rank57 from "../assets/imgs/5rank7.jpg";
+import Rank58 from "../assets/imgs/5rank8.jpg";
+import Rank59 from "../assets/imgs/5rank9.jpg";
 
 const Ranks = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -39,21 +54,15 @@ const Ranks = () => {
       description:
         "Choose Your PERSONAL HERALDIC SYMBOL. Start your journey in the Royal Realm by selecting your own unique heraldic emblem from the NEFTING Showcase labeled “RANK 1). This will be the symbol that represents you as a one who entered the Royal Realm as a voyager.",
       images: [
-        COA1,
-        COA2,
-        COA3,
-        COA4,
-        COA5,
-        COA6,
-        COA7,
-        COA8,
-        COA9,
-        COA10,
-        COA11,
-        COA12,
-        COA13,
-        COA14,
-        COA15,
+        Rank11,
+        Rank12,
+        Rank13,
+        Rank14,
+        Rank15,
+        Rank16,
+        Rank17,
+        Rank18,
+        Rank19,
       ],
     },
     {
@@ -62,21 +71,15 @@ const Ranks = () => {
       description:
         "Get your POLISHED ARMS - SHOW PERSONAL PRIDE! Register your heraldic emblem and take your first steps towards embodying the spirit of true nobility. Choose from our three tiers of digital registration to begin your journey.",
       images: [
-        COA1,
-        COA2,
-        COA3,
-        COA4,
-        COA5,
-        COA6,
-        COA7,
-        COA8,
-        COA9,
-        COA10,
-        COA11,
-        COA12,
-        COA13,
-        COA14,
-        COA15,
+        Rank21,
+        Rank22,
+        Rank23,
+        Rank24,
+        Rank25,
+        Rank26,
+        Rank27,
+        Rank28,
+        Rank29,
       ],
     },
     {
@@ -84,23 +87,7 @@ const Ranks = () => {
       title: "RANK 3 (Elite of the Royal Realm)",
       description:
         "CREATE your FULL HERALDIC ACHIEVEMENT - Create using coamaker.com (Coat of Arms, Flag, and Badge) + Digital Royal Stamp. Become a Noble of the Royal Realm, with your own fine art physical heraldic assets handmade by our Heraldic Officer. Register them digitally to make them officially yours, and embody the spirit of true nobility.",
-      images: [
-        COA1,
-        COA2,
-        COA3,
-        COA4,
-        COA5,
-        COA6,
-        COA7,
-        COA8,
-        COA9,
-        COA10,
-        COA11,
-        COA12,
-        COA13,
-        COA14,
-        COA15,
-      ],
+      images: [Rank31, Rank32, Rank33],
     },
     {
       id: 4,
@@ -108,21 +95,15 @@ const Ranks = () => {
       description:
         "Premium Fine Art & NFT 1:1. Get this exclusive piece of fine art or WIN IT with our Royal Challenges. This is a museum-level piece of fine art, matched with an NFT of it, 1:1. This artwork is part of our Origin Story, which you can own and show off your status to the world. Embody the spirit of true nobility with this exclusive piece of art.",
       images: [
-        COA1,
-        COA2,
-        COA3,
-        COA4,
-        COA5,
-        COA6,
-        COA7,
-        COA8,
-        COA9,
-        COA10,
-        COA11,
-        COA12,
-        COA13,
-        COA14,
-        COA15,
+        Rank11,
+        Rank12,
+        Rank13,
+        Rank14,
+        Rank15,
+        Rank16,
+        Rank17,
+        Rank18,
+        Rank19,
       ],
     },
     {
@@ -131,21 +112,15 @@ const Ranks = () => {
       description:
         "Finally, become a Ruler of the Royal Realm, a character in our Origin Story, with your personal handmade Royal Bust and matching NFT 1:1. This is the ultimate way to show the world your royal status and embody the spirit of true nobility.",
       images: [
-        COA1,
-        COA2,
-        COA3,
-        COA4,
-        COA5,
-        COA6,
-        COA7,
-        COA8,
-        COA9,
-        COA10,
-        COA11,
-        COA12,
-        COA13,
-        COA14,
-        COA15,
+        Rank51,
+        Rank52,
+        Rank53,
+        Rank54,
+        Rank55,
+        Rank56,
+        Rank57,
+        Rank58,
+        Rank59,
       ],
     },
     {
@@ -154,21 +129,15 @@ const Ranks = () => {
       description:
         "Show your ROYAL PRIDE with our exclusive merchandise. Gain rank-leveling points by wearing the TNR merch and sharing it on social media!",
       images: [
-        COA1,
-        COA2,
-        COA3,
-        COA4,
-        COA5,
-        COA6,
-        COA7,
-        COA8,
-        COA9,
-        COA10,
-        COA11,
-        COA12,
-        COA13,
-        COA14,
-        COA15,
+        Rank11,
+        Rank12,
+        Rank13,
+        Rank14,
+        Rank15,
+        Rank16,
+        Rank17,
+        Rank18,
+        Rank19,
       ],
     },
   ];
@@ -197,7 +166,7 @@ const Ranks = () => {
           >
             <img
               onLoad={() => setImagesLoaded(true)}
-              className={`w-full h-full object-fill ${
+              className={`w-full h-full object-cover ${
                 imagesLoaded
                   ? "opacity-100 transition-opacity duration-700"
                   : "opacity-0"
@@ -205,6 +174,7 @@ const Ranks = () => {
               src={item.images[0]}
               alt={item.title}
             />
+
             <div
               className={`absolute inset-0 bg-black bg-opacity-40 backdrop-blur-sm ${
                 imagesLoaded
