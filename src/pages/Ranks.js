@@ -32,6 +32,10 @@ import Rank56 from "../assets/imgs/5rank6.jpg";
 import Rank57 from "../assets/imgs/5rank7.jpg";
 import Rank58 from "../assets/imgs/5rank8.jpg";
 import Rank59 from "../assets/imgs/5rank9.jpg";
+import Merch1 from "../assets/imgs/merch1.jpg";
+import Merch2 from "../assets/imgs/merch2.jpg";
+import Merch3 from "../assets/imgs/merch3.jpg";
+import Merch4 from "../assets/imgs/merch4.jpg";
 
 const Ranks = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -128,17 +132,7 @@ const Ranks = () => {
       title: "TNR Merch (Noble Rank Boost)",
       description:
         "Show your ROYAL PRIDE with our exclusive merchandise. Gain rank-leveling points by wearing the TNR merch and sharing it on social media!",
-      images: [
-        Rank11,
-        Rank12,
-        Rank13,
-        Rank14,
-        Rank15,
-        Rank16,
-        Rank17,
-        Rank18,
-        Rank19,
-      ],
+      images: [Merch1, Merch2, Merch3, Merch4],
     },
   ];
   return (
