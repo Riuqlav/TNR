@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TNR/static/css/main.4682d25f.css",
-    "main.js": "/TNR/static/js/main.d671b0e5.js",
+    "main.js": "/TNR/static/js/main.5cea74b3.js",
     "static/media/2rank5.png": "/TNR/static/media/2rank5.32446d98ccf32a6cbf18.png",
     "static/media/2rank4.png": "/TNR/static/media/2rank4.d5790d3868ba51412070.png",
     "static/media/2rank6.png": "/TNR/static/media/2rank6.f52029ef1942234358ab.png",
@@ -49,10 +49,10 @@
     "static/media/tnr coa 2.jpg": "/TNR/static/media/tnr coa 2.88fe72884a518d0c38c3.jpg",
     "index.html": "/TNR/index.html",
     "main.4682d25f.css.map": "/TNR/static/css/main.4682d25f.css.map",
-    "main.d671b0e5.js.map": "/TNR/static/js/main.d671b0e5.js.map"
+    "main.5cea74b3.js.map": "/TNR/static/js/main.5cea74b3.js.map"
   },
   "entrypoints": [
     "static/css/main.4682d25f.css",
-    "static/js/main.d671b0e5.js"
+    "static/js/main.5cea74b3.js"
   ]
 }
