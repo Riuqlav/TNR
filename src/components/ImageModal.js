@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 
-const ImageModal = ({ isOpen, images, onClose }) => {
+const ImageModal = ({
+  isOpen,
+  images,
+  description,
+  onClose,
+  showDescription,
+}) => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleClick = (img) => {
@@ -34,7 +40,10 @@ const ImageModal = ({ isOpen, images, onClose }) => {
         >
           Close
         </button>
-        {selectedImage ? (
+
+        {showDescription ? (
+          <div className="text-base leading-relaxed">{description}</div>
+        ) : selectedImage ? (
           <div className="h-full flex items-center justify-center">
             <button
               className="absolute top-2 left-2"

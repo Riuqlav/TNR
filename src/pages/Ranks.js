@@ -41,6 +41,13 @@ const Ranks = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentImages, setCurrentImages] = useState([]);
   const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [descriptionModalIsOpen, setDescriptionModalIsOpen] = useState(false);
+  const [currentDescription, setCurrentDescription] = useState("");
+
+  const openDescriptionModal = (description) => {
+    setCurrentDescription(description);
+    setDescriptionModalIsOpen(true);
+  };
 
   const openModal = (images) => {
     setCurrentImages(images);
@@ -139,8 +146,13 @@ const Ranks = () => {
     <div className="my-8 mb-8">
       <ImageModal
         images={currentImages}
-        isOpen={modalIsOpen}
-        onClose={closeModal}
+        description={currentDescription}
+        isOpen={modalIsOpen || descriptionModalIsOpen}
+        onClose={() => {
+          closeModal();
+          setDescriptionModalIsOpen(false);
+        }}
+        showDescription={descriptionModalIsOpen}
       />
 
       <div className="text-center mb-6">
@@ -186,6 +198,7 @@ const Ranks = () => {
                   </p>
                   <a
                     href="#"
+                    onClick={() => openDescriptionModal(item.description)}
                     className="text-gray-600 underline hover:text-gray-700 transition-colors duration-300 text-right ml-auto"
                   >
                     Learn More
