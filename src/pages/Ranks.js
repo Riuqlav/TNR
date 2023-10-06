@@ -106,7 +106,7 @@ const Ranks = () => {
       description:
         "Premium Fine Art & NFT 1:1. Get this exclusive piece of fine art or WIN IT with our Royal Challenges. This is a museum-level piece of fine art, matched with an NFT of it, 1:1. This artwork is part of our Origin Story, which you can own and show off your status to the world. Embody the spirit of true nobility with this exclusive piece of art.",
       images: [
-        Rank11,
+        Rank15,
         Rank12,
         Rank13,
         Rank14,
