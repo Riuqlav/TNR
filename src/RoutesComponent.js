@@ -1,20 +1,18 @@
-import React from 'react';
-import {Route, Routes } from 'react-router-dom';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 
-import Home from './pages/Home';
-import Articles from './pages/Articles';
-import Community from './pages/Community';
-import Ranks from './pages/Ranks';
-import Vocabulary from './pages/Vocabulary';
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Community from "./pages/Community";
+import Ranks from "./pages/Ranks";
 
 const RoutesComponent = () => {
   return (
     <Routes>
       <Route path="/TNR/" element={<Home />} />
-      <Route path="/articles" element={<Articles />} />
+      <Route path="/about" element={<About />} />
       <Route path="/community" element={<Community />} />
       <Route path="/ranks" element={<Ranks />} />
-      <Route path="/vocabulary" element={<Vocabulary />} />
     </Routes>
   );
 };

@@ -69,7 +69,7 @@ const Header = () => {
             Home
           </Link>
           <Link
-            to="/articles"
+            to="/about"
             className="block p-4 transition-colors duration-200 text-white"
             onClick={hideMenu}
           >
@@ -81,13 +81,6 @@ const Header = () => {
             onClick={hideMenu}
           >
             Ranks
-          </Link>
-          <Link
-            to="/vocabulary"
-            className="block p-4 transition-colors duration-200 text-white"
-            onClick={hideMenu}
-          >
-            Vocabulary
           </Link>
           <Link
             to="/community"

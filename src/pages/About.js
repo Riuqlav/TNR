@@ -6,7 +6,7 @@ import NFT8 from "../assets/imgs/NFT8.jpg";
 import NFT9 from "../assets/imgs/NFT9.jpg";
 import NFT4 from "../assets/imgs/NFT4.jpg";
 
-const Articles = () => {
+const About = () => {
   const ContentTable = useMemo(
     () => [
       {
@@ -50,10 +50,17 @@ const Articles = () => {
       },
       {
         id: 5,
-        title: "The New Royals",
+        title: "TNR Vocabulary",
+        img: "https://raw.githubusercontent.com/Riuqlav/calendar-dual/master/src/assets/imgs/NFt1.jpg",
         content:
-          "There is life, potential, and greatness <br /><br />WITHIN ME<br />There is glory, joy, and strength<br />IN MY BLOOD<br />Although I am in darkness, weak,and lost<br />IN EXILE<br />Although in my lamp there is fire no moreI.<br />I. SHALL. RISE. AGAIN!<br />From rubble to might<br />From shame to glory<br />From weakness to strength<br />I. SHALL. RISE. AGAIN!<br />For my sword and my shield<br />For my throne and my staff<br />For my House and my People<br />I AM THE EXILARCH<br />In my return there is redemption<br />In my name there is pride<br />In my reign there is peace<br />I AM THE EXILARCH<br />As I roar you tremble<br />As I smile you rejoice<br />As I cheer you drink<br />I AM THE MONARCH<br />The Exilarch of old<br />The Sovereign of this Realm<br />For the Here, Now, and Forever!",
+          "<br/><strong>The New Royals</strong> also known by the acronym TNR<br/><strong>Royal Realm</strong> or <strong>The Kingdom</strong> is the name of our community ecosystem<br/><strong>TNR Collectible NFTs</strong> - Variations of <strong>Royal Busts</strong> created with limited use of artificial intelligence and/or software use from the base of a fine art piece by JôNATAS.<br/><strong>Royal Grants</strong> are Collectible NFT giveaways.<br/><strong>TNR Premium NFTs</strong> - Fine art pieces minted from, and accompanied by a physical, one-of-a-kind, fine art piece by JôNATAS, with a certificate of authenticity mentioning current market value.<br/><strong>Citizens of the Royal Realm</strong> are non-collectors, participants of our social media channels, members of our general community.<br/><strong>Nobles of the Realm</strong> are those who own at least a Collectible NFT, who are generally referred to in our community by the title of Lord and Lady.<br/><strong>Royals of the Realm</strong> any noble who owns his or hers Royal Bust or owns 10% or more of a Premium Collection. A Royal is eligible to develop a Royal House.<br/><strong>The Ministers of the Exilarch</strong> are the greatest among the Royals of the Realm to achieve this status one must be a developer of The New Royals.<br/><strong>Royals of the Realm</strong> are heads of Royal Houses, meaning, the network from our main leaders and builders.<br/><strong>The Exilarch</strong> is the Great Monarch in exile.<br/><strong>Royal Challenges</strong> - Royal challenges is a communal event that allows Royal Realm members the opportunity to be granted a TNR Original Art when the challenge is won.",
       },
+      // {
+      //   id: 6,
+      //   title: "The New Royals",
+      //   content:
+      //     "There is life, potential, and greatness <br /><br />WITHIN ME<br />There is glory, joy, and strength<br />IN MY BLOOD<br />Although I am in darkness, weak,and lost<br />IN EXILE<br />Although in my lamp there is fire no moreI.<br />I. SHALL. RISE. AGAIN!<br />From rubble to might<br />From shame to glory<br />From weakness to strength<br />I. SHALL. RISE. AGAIN!<br />For my sword and my shield<br />For my throne and my staff<br />For my House and my People<br />I AM THE EXILARCH<br />In my return there is redemption<br />In my name there is pride<br />In my reign there is peace<br />I AM THE EXILARCH<br />As I roar you tremble<br />As I smile you rejoice<br />As I cheer you drink<br />I AM THE MONARCH<br />The Exilarch of old<br />The Sovereign of this Realm<br />For the Here, Now, and Forever!",
+      // },
     ],
     []
   );
@@ -127,4 +134,4 @@ const Articles = () => {
     </div>
   );
 };
-export default Articles;
+export default About;

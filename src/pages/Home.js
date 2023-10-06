@@ -19,11 +19,11 @@ const Home = () => {
     () => [
       {
         id: 1,
-        title: "Articles",
+        title: "About",
         content:
           "We are a team of passionate developers who love building amazing web applications. Our goal is to create software that is not only functional but also beautiful and intuitive. We believe that technology should be accessible to everyone, and we strive to make our products easy to use for people of all skill levels.",
         img: NFT1,
-        link: "/articles",
+        link: "/about",
       },
       {
         id: 2,
