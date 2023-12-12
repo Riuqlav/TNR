@@ -60,6 +60,7 @@ const ImageModal = ({
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {images.map((img, index) => (
+              // eslint-disable-next-line jsx-a11y/img-redundant-alt
               <img
                 key={index}
                 src={img}
