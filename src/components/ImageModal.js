@@ -76,4 +76,5 @@ const ImageModal = ({
   ) : null;
 };
 
+
 export default ImageModal;
