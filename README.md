@@ -10,7 +10,7 @@ The New Royals NFT Club is an exclusive community, understanding and harnessing 
 
 Embark on an extraordinary journey with us. As a New Royal, you are not just an observer, but a participant in this grand narrative. Become a strong personality capable of conquering new realms, ideas, and ideals.
 
-## 🎖️ Your Heraldry 
+## 🎖️ Your Heraldry
 
 Claim your place among legends through personal heraldry. Our NFTs are not just artwork, they are a symbol of your unique persona and the impact you have on this expansive digital realm.
 
@@ -26,4 +26,4 @@ Every Royal has a story, and we encourage you to enter ours. The Original Story 
 
 Forge a new era marked by conquests of the mind, heart, and soul. This is not just about owning NFTs. This is about creating a legacy in a rapidly evolving digital world. The world awaits the rise of the New Royals!
 
-Welcome to The New Royals NFT Club - the future of digital royalty! 🏰🎉
+Welcome to The New Royals NFT Club the future of digital royalty! 🏰🎉
